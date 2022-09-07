@@ -28,8 +28,8 @@
     else if($temp=='login') {
         include("user/login.php");
     }
-    else if($temp=='forgot') {
-        include("user/change-pwd.php");
+    else if($temp=='checkout') {
+        include("main/checkout.php");
     }
     else {
         include("main/index.php");

@@ -9,7 +9,7 @@
 
         //Write API
         if(isset($_POST['add_to_cart'])) {
-            $amount = 1;
+            $amount = $_POST['quantity'];
             $select_product = "select * from product where id = '$id'";
             $productList = executeResult($select_product,true);
     
@@ -26,7 +26,7 @@
                     $isFind = false;
                     foreach($cart as $item) {
                         if($item['id'] == $id) {
-                            $item['amount'] = ++$item['amount'];
+                            $item['amount'] = $item['amount']+$amount;
                             $item['total_price'] = $item['amount']*$item['price'];
                             $isFind = true;
                             break;

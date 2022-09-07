@@ -57,7 +57,8 @@
 <?php 
     if(isset($_COOKIE['cart'])) {
         $cart[] = $_COOKIE['cart']; 
-        echo count($cart);
+        $arr_length = sizeof($cart);
+        echo ++$arr_length;
     }
     else {
         echo 0;

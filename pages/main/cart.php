@@ -37,6 +37,7 @@
          $json = $_COOKIE['cart'];
          $cart = json_decode($json, true);
         $totals_price = 0;
+        var_dump($cart);
     ?>
                  <div class="box-heading container" style="margin-bottom: 30px;">
                     <h1 style="font-size: 25px;" class="title-header">
@@ -120,7 +121,7 @@
                                 <div class="col-2">
                                     <div class="custom custom-btn-number number f-left">																			
                                         <span class="qtyminus minus" data-field="quantity"><i class="fa-solid fa-minus"></i></span>
-                                        <input type="text" class="qty" data-field="quantity" title="Só lượng" value="'. $cart_item['amount'] .' maxlength="12" id="qty" name="quantity">									
+                                        <input type="text" class="qty" data-field="quantity" title="Só lượng" value="'. $cart_item['amount'] .'" maxlength="12" id="qty" name="quantity">									
                                         <span class="qtyplus plus" data-field="quantity"><i class="fa-solid fa-plus"></i></i></span>	
                                     </div>
                                 </div>
@@ -140,12 +141,12 @@
                                 </div>
                                 <div class="col-1">
                                     <div class="deleteProduct">
-                                        <button style="border: none">
+                                        <a style="border: none">
                                             <i class="fa-solid fa-xmark"></i>
                                             <span>
                                                 Xóa
                                             </span>
-                                        </button>
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -172,15 +173,15 @@
                                         </table>
                                                 <ul class="checkout col-4" style="float: right;display:flex" >
                                                     <li>
-                                                    <button class="btn btn-primary " title="Tiến hành đặt hàng" type="button" style="background-color: #f1f1f1;">
-                                                            <span style=" text-transform: initial; ">Tiến hành đặt hàng</span>
-                                                        </button>
+                                                        <a href="index.php?page=category&id=1" class="btn btn-success " title="Tiếp tục mua hàng" type="a" >
+                                                            <span >Tiếp tục mua hàng</span>
+                                                        </a>
                                                     </li>
                                                     <li>
-                                                    <button class="btn btn-success " title="Tiếp tục mua hàng" type="button" >
-                                                            <span style=" text-transform: initial; ">Tiếp tục mua hàng</span>
-                                                        </button>
-                                                    </li>    
+                                                        <a href="index.php?page=checkout" class="btn btn-primary " title="Tiến hành đặt hàng" type="a" >
+                                                            <span >Tiến hành đặt hàng</span>
+                                                        </a>
+                                                    </li>
                                                 </ul>
                                                 <li style="clear: both;"></li>
                                 </div>
