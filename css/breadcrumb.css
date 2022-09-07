@@ -1,0 +1,29 @@
+/* BREAD-CRUMB */
+
+.bread-crumb {
+    border-bottom: 1px solid rgba(204, 204, 204, 0.411);
+}
+
+.bread-crumb .list-inline ul {
+    display: flex;
+}
+
+.bread-crumb .list-inline ul li a {
+    color: #000;
+    transition: all 150ms ease-in-out;
+}
+
+.bread-crumb .list-inline ul li a:hover {
+    color: #898989;
+}
+
+
+/* .bread-crumb .list-inline ul li .fa-house {
+    margin-right: px;
+} */
+
+.bread-crumb .list-inline ul li {
+    text-transform: uppercase;
+    margin: 15px 6px 0 6px;
+    cursor: pointer;
+}
