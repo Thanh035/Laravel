@@ -21,6 +21,7 @@ if(!empty($_POST)) {
     }
 }
 ?>
+<title>Đăng kí tài khoản</title>
 <!-- Content  -->
         <section class="bread-crumb">
         <div class="container">

@@ -1,0 +1,25 @@
+/* RESPONSIVE */
+
+@media (min-width:1200px) {
+    .container {
+        max-width: 1200px !important;
+    }
+}
+
+@media (max-width:991px) {
+    .display-none {
+        display: none !important;
+    }
+    .logo {
+        margin: 6px 250px 0 250px;
+    }
+}
+
+@media (max-width:768px) {
+    .logo {
+        margin: 6px 200px 0 200px;
+    }
+    .static .container {
+        max-width: 756px;
+    }
+}

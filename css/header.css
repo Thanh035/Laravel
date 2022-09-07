@@ -1,0 +1,197 @@
+.fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    z-index: 9;
+    background: #fff;
+}
+
+
+/* MENU */
+
+header nav {
+    background: #000;
+    color: #fff;
+}
+
+header nav .nav-item.has-mega {
+    position: static;
+}
+
+.header nav .nav-item {
+    display: inline-block;
+    position: relative;
+}
+
+header nav .nav {
+    position: relative;
+}
+
+header nav .nav-item>a {
+    padding: 8px 25px 8px 20px;
+    line-height: 35px;
+    color: #fff;
+    font-size: 16px;
+    font-weight: 500;
+    position: relative;
+}
+
+.nav>li>a {
+    display: block;
+}
+
+header nav .nav-text-before>a:before {
+    content: "";
+    width: 2px;
+    height: 15px;
+    background: rgba(255, 255, 255, 0.5);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 18px;
+}
+
+.flex-jus-center {
+    justify-content: center;
+}
+
+.nav .has-mega a i {
+    font-size: 12px;
+}
+
+header nav .nav-item:hover>.mega-content {
+    display: block;
+    text-align: left;
+}
+
+header nav .mega-content {
+    display: none;
+    position: absolute;
+    width: 1170px;
+    background: #fff;
+    z-index: 999;
+    padding: 20px;
+    border: 1px solid #ebebeb;
+    left: 0;
+}
+
+header nav .mega-content .l1.item {
+    float: left;
+    width: 23.5%;
+    padding: 0 5px;
+    margin-bottom: 10px;
+}
+
+header nav .nav-item .mega-content .h4 {
+    font-size: 17px;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+header nav .nav-item .mega-content .l1 .l2 {
+    line-height: 16px;
+    padding: 4px 0;
+    font-family: arial;
+}
+
+header nav .nav-item .mega-content .l1 .l2 a {
+    font-size: 13.5px;
+}
+
+.mega-content a {
+    color: #363636;
+}
+
+.mega-content a:hover {
+    color: #000;
+}
+
+.slick-arrow {
+    position: absolute;
+    font-size: 28px;
+    padding: 15px;
+    transform: translateY(-50%);
+    background: transparent;
+    color: #000;
+    border: none;
+    z-index: 2;
+    top: 50%;
+    transition: all 150ms ease-in-out;
+}
+
+.slick-arrow:hover {
+    color: #ccc;
+}
+
+.slick-next {
+    right: 0;
+}
+
+.slick-dots {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%, 50px);
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    gap: 0 10px;
+}
+
+.slick-dots button {
+    font-size: 0;
+    width: 12px;
+    height: 12px;
+    border-radius: 100px;
+    border: none;
+    background-color: #fff;
+    outline: none;
+    transition: all 150ms ease-in-out;
+}
+
+.slick-dots .slick-active button {
+    background-color: #1a1a1a;
+}
+
+
+/* BANNER */
+
+.img-banner1 {
+    position: relative;
+    overflow: hidden;
+}
+
+.i_b {
+    display: inline-block !important;
+}
+
+.img-banner1:before {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(67, 69, 113, 0);
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}
+
+.img-banner1:after {
+    position: absolute;
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: rgba(67, 69, 113, 0);
+    -webkit-transition: all 0.6s ease-in-out;
+    transition: all 0.6s ease-in-out;
+    -moz-transition: all 0.6s ease-in-out;
+    -ms-transition: all 0.6s ease-in-out;
+    -o-transition: all 0.6s ease-in-out;
+}

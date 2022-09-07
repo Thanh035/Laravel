@@ -1,0 +1,157 @@
+/* NEWS */
+
+.news {
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.news .title-news h1 {
+    font-size: 27px;
+    font-weight: 700;
+    opacity: 0.7;
+    margin: 50px 0;
+    text-align: center;
+}
+
+.slide-news .box-slide-news {
+    margin: 15px;
+    transition: all 0.3s ease-in-out;
+}
+
+.box-content-news {
+    padding: 20px;
+    background: #f7f9f8;
+}
+
+.box-slide-news .box-img-news a img {
+    width: 100%;
+    height: 285px;
+}
+
+.blog-meta-secondary {
+    font-size: 11px;
+    opacity: 0.5;
+    margin-bottom: 10px;
+}
+
+.box-content-news h2 {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 1;
+    height: 1.3em;
+    margin: 0 0 5px 0;
+    font-size: 20px;
+    font-weight: 700;
+    opacity: 0.8;
+}
+
+.box-content-news p {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 2;
+    height: 55px;
+    font-size: 14px;
+    line-height: 25px;
+    margin-top: 10px;
+    color: #424242;
+}
+
+.box-content-news button {
+    color: #7a9c59;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-weight: 900;
+    border-color: transparent !important;
+    background: #f7f9f8;
+}
+
+.box-slide-news:hover {
+    box-shadow: 0px 0px 10px #ccc;
+}
+
+.blog-meta-secondary time {
+    margin-left: 10px;
+}
+
+
+/* Chi tiet tin tuc */
+
+.box-title-news {
+    box-shadow: 0px 0px 2px rgb(99 99 99);
+    transition: all 300ms ease-in-out;
+}
+
+.box-title-news:hover {
+    box-shadow: 0px 5px 10px rgb(142 142 142);
+}
+
+.time-and-author {
+    margin-bottom: 5px;
+    font-size: 11px;
+    font-weight: 500;
+    letter-spacing: 0.8px;
+    display: flex;
+}
+
+.entry-category {
+    padding: 20px;
+    opacity: .7;
+}
+
+.entry-category h6 {
+    text-transform: uppercase;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.entry-category h1 {
+    font-size: 26px;
+    font-weight: 700;
+}
+
+.time-and-author time {
+    margin: 0 5px;
+}
+
+.time-and-author p {
+    margin-right: 5px;
+}
+
+.text-entry-category {
+    padding: 20px;
+}
+
+.text-entry-category p {
+    font-size: 16px;
+    line-height: 1.7;
+    opacity: .7;
+    font-weight: 100;
+}
+
+.heading-entry-category h2 {
+    padding: 0 20px;
+    margin: 0;
+    font-size: 24px;
+    font-weight: 700;
+    opacity: .9;
+}
+
+.heading-entry-category h3 {
+    padding: 0 20px;
+    margin: 0;
+    font-size: 22px;
+    font-weight: 700;
+    opacity: .8;
+}
+
+.note-entry-category h5 {
+    font-size: 16px;
+    opacity: .5;
+}
+
+.img-entry-category {
+    padding-left: 20px;
+}

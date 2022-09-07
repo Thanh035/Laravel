@@ -1,3 +1,4 @@
+<main style="margin-top: 150px;">
 <?php 
     if(isset($_GET['page'])) {
         $temp = $_GET['page'];
@@ -34,3 +35,4 @@
         include("main/index.php");
     }
 ?>
+</main>

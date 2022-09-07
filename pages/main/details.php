@@ -47,7 +47,7 @@
                     setcookie('cart', json_encode($cart),time() + 30*24*60*60,'/');
         }
 ?>
-    
+    <title><?php echo $productDetail['product_name']?></title>
     <section class="bread-crumb">
         <div class="container">
             <div class="row">

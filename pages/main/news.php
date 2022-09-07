@@ -1,3 +1,4 @@
+<title>Tin tức</title>
 <section class="bread-crumb">
         <div class="container">
             <div class="row">

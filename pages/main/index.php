@@ -1,20 +1,21 @@
+<title><?php echo $infoList['title'] ?></title>
 <section class="slide_first">
         <div class="container-fluid">
             <div class="row">
                 <div class="col-12" style="padding: 0;">
                     <div class="slide-show-skate" width="100px">
                         <div class="in-sss">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/slider_1.webp" width="100%" height="auto" alt="">
                             </a>
                         </div>
                         <div class="in-sss">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/slider_2.webp" width="100%" height="auto" alt="">
                             </a>
                         </div>
                         <div class="in-sss">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/slider_3.webp" width="100%" height="auto" alt="">
                             </a>
                         </div>
@@ -31,63 +32,63 @@
                     <div class="owl-stage">
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-1.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-2.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-3.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-1.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-2.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-3.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-1.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-2.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
                         </div>
                         <div class="owl-item">
                             <div class="item">
-                                <a href="">
+                                <a href="index.php?page=category&id=1">
                                     <img src="https://bizweb.dktcdn.net/100/345/407/themes/706150/assets/banner-3.png?1656415239934" width="100%" alt="">
                                 </a>
                             </div>
@@ -132,13 +133,15 @@
                                         <div class="owl-stage-outer">
     <?php
         foreach($categoryList as $item) {
-            $count = $item['id'];
-            $query_product = "SELECT * FROM product WHERE status = 1 AND category_id = '$count' ";
+            $tab = $item['id'];
+            $query_product = "SELECT * FROM product WHERE status = 1 AND category_id = '$tab' ";
             $list = executeResult($query_product);
      ?>
-                                            <div class="owl-stage-2 container" id="tab_<?php echo $count ?>">
+                                            <div class="owl-stage-2 container" id="tab_<?php echo $tab ?>">
                                                 <div class="owl-item-2 row">
-                            <?php foreach($list as $product) { ?>                        
+                            <?php 
+                            $count = 0;
+                            foreach($list as $product) { ?>                        
                                                     <div class="item col-lg-3 col-md-6 col-sm-6">
                                                         <div class="product-box">
                                                             <div class="product-thumbnail">
@@ -160,7 +163,11 @@
                                                             </div>
                                                         </div>
                                                     </div>
-                            <?php }  ?>                        
+                            <?php
+                            if(++$count == 8) {
+                                break;
+                            }
+                        }  ?>                        
                                                 </div>
                                             </div>    
       <?php }?>                                        
@@ -198,70 +205,70 @@
                 <div class="owl-stage-3">
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand1.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand2.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand3.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand4.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand5.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand6.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand7.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand8.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand9.png" alt="">
                             </a>
                         </div>
                     </div>
                     <div class="owl-item">
                         <div class="brand-item">
-                            <a href="">
+                            <a href="index.php?page=category&id=1">
                                 <img src="img/slideforall/brand/brand10.png" alt="">
                             </a>
                         </div>
@@ -271,27 +278,4 @@
         </div>
     </section>
    
-<script>
-    function process(tabShow){
-        $('.owl-stage-2').hide();
-        
-        $('#'+tabShow).show();
-    }
-</script>
-<script>
-    $('.owl-stage-2').hide();
 
-    $( '.owl-stage-2' ).each(function( index ) {
-    if(index == 0){
-        $( this ).show();
-    }
-    });
-</script>
-<script>
-    function addCart()
-    {
-        var count_item_pr= parseInt($('.count_item_pr').html());
-        count_item_pr++;
-        $('.count_item_pr').html(count_item_pr);
-    }
-</script>

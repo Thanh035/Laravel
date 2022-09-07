@@ -1,6 +1,6 @@
 
-<header>
-        <div class="container">
+    <header class="fixed">
+        <div class="top-header container">
             <div class="header-main">
                 <div class="row">
                     <div class="col-md-3">
@@ -74,7 +74,7 @@
         </div>
         <div class="static">
             <nav>
-                <div class="container">
+                <div class="bottom-header container">
                     <ul class="nav flex-jus-center">
                         <li class="nav-item nav-text-before">
                             <a href="index.php">TRANG CHỦ</a>

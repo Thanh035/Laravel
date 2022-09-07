@@ -3,6 +3,8 @@
     margin: 0px;
 }
 </style>
+<title>Giỏ hàng</title>
+
 <section class="bread-crumb">
         <div class="container">
             <div class="row">
@@ -87,7 +89,9 @@
                             <div class="row" >
                                 <div class="col-2">
                                     <div class="img-detail-cart">
-                                        <img src="img/product/'. $cart_item['thumbnail'].'" width="100%" alt="'. $cart_item['thumbnail'].'">
+                                        <a href="index.php?page=details&id='. $cart_item["id"].'">
+                                            <img src="img/product/'. $cart_item['thumbnail'].'" width="100%" alt="'. $cart_item['thumbnail'].'">
+                                        </a>
                                     </div>
                                 </div>
                                 <div class="col-3">

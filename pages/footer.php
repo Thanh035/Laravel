@@ -83,3 +83,29 @@
             </div>
         </div>
     </footer>
+
+    <script>
+    function process(tabShow){
+        $('.owl-stage-2').hide();
+        
+        $('#'+tabShow).show();
+    }
+</script>
+<script>
+    $('.owl-stage-2').hide();
+
+    $( '.owl-stage-2' ).each(function( index ) {
+    if(index == 0){
+        $( this ).show();
+    }
+    });
+</script>
+<script>
+    function addCart()
+    {
+        var count_item_pr= parseInt($('.count_item_pr').html());
+        count_item_pr++;
+        $('.count_item_pr').html(count_item_pr);
+    }
+</script>
+    

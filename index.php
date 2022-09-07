@@ -14,16 +14,19 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title><?php echo $infoList['title'] ?></title>
-    
+    <link rel="icon" type="image/x-icon" href="./img/logo/logo.png">
     <!-- Styles  -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
     <link rel="stylesheet" href="css/cart.css">
     <link rel="stylesheet" href="css/contact.css">
     <link rel="stylesheet" href="css/category.css">
     <link rel="stylesheet" href="css/detail.css">
     <link rel="stylesheet" href="css/breadcrumb.css">
     <link rel="stylesheet" href="css/user.css">
+    <link rel="stylesheet" href="css/news.css">
+
 
     <!-- Fonts/Library  -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>

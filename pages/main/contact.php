@@ -15,7 +15,7 @@
     }
 ?>
 
-
+<title>Liên hệ</title>
 <!--Main content  -->
     <section class="bread-crumb">
         <div class="container">

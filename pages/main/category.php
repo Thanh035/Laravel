@@ -1,4 +1,4 @@
-
+<title>Sản phẩm</title>
 <section class="bread-crumb">
         <div class="container">
             <div class="row">
@@ -39,8 +39,11 @@
                                 </a>
                             </li>
 <?php 
-    $select_category = "select * from category";
-    $categoryList = executeResult($select_category);
+
+
+        $select_category = "select * from category ";
+        $categoryList = executeResult($select_category);
+
     foreach($categoryList as $items) {
         echo "
         <li>   
@@ -61,8 +64,16 @@
                             <div class="tt hidden-sm hidden-xs inline-block" style="font-weight: bold;">
                                 <div class="view-mode">
                                         <?php 
+                                                // $per_page_record = 4;
+                                                // if (!isset ($_GET['view']) ) {
+                                                // $view = 1;
+                                                // } else {
+                                                // $view = $_GET['view'];
+                                                // }
+                                                // $start_from = ($view-1) * $per_page_record;
+
                                         $id = $_GET['id'];
-                                        $query_category= "select * from category where id = '$id'";
+                                        $query_category= "select * from category  where id = '$id' ";
                                         $category_name = executeResult($query_category,1);
                                         echo $category_name['name'];
                                     ?>
