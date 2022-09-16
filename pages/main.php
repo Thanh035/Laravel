@@ -1,4 +1,4 @@
-<main style="margin-top: 150px;">
+<main style="margin-top: 150px;" id="top-main">
 <?php 
     if(isset($_GET['page'])) {
         $temp = $_GET['page'];
@@ -30,6 +30,9 @@
     }
     else if($temp=='checkout') {
         include("main/checkout.php");
+    }
+    else if($temp=='search') {
+        include("main/search.php");
     }
     else {
         include("main/index.php");

@@ -1,6 +1,12 @@
+<style>
+    .all_Product .main-content .search-text{
+        width: 100%;
+        border-radius: 1px;
+}
+</style>
+
 <title>Sản phẩm</title>
-<section class="bread-crumb">
-        <div class="container">
+    <section class="bread-crumb container">
             <div class="row">
                 <div class="col-12">
                     <div class="list-inline">
@@ -21,16 +27,15 @@
                     </div>
                 </div>
             </div>
-        </div>
     </section>
-    <section class="sidebar_Aproduct">
-        <div class="container">
+
+    <section class="sidebar_Aproduct container">
             <div class="row">
                 <div class="col-3">
                     <div class="title-sidebar">
                         <ul>
                             <div class="in-title-sidebar">
-                                <p>DANH MỤC</p>
+                                <strong>DANH MỤC</strong>
                             </div>
                             <li>
                                 <a href="index.php">
@@ -39,8 +44,6 @@
                                 </a>
                             </li>
 <?php 
-
-
         $select_category = "select * from category ";
         $categoryList = executeResult($select_category);
 
@@ -88,7 +91,7 @@
                                     )
                                 </div>
                             </div>
-                            <div class="sort-by" id="sort-by">
+                            <!-- <div class="sort-by" id="sort-by">
                                 <ul>
                                     <li class="in-sort-by">
                                         <span>Sắp xếp theo
@@ -105,20 +108,11 @@
                                         </ul>
                                     </li>
                                 </ul>
-                            </div>                      
+                            </div>                       -->
                         </div>
-                        <div class="container">
+                        <div class="main-content container">
                             <div class="row">
-                            <div class="header-search" style="margin-bottom: 30px;">
-                                    <form class="input-group search-bar" method="get" role="search">
-                                        <input type="text" name="query" value="" placeholder="Tìm kiếm... " class="input-group-field st-default-search-input search-text" autocomplete="off">
-                                        <span class="input-group-btn">
-                                            <button class="btn icon-fallback-text">
-                                                <i class="fa-solid fa-magnifying-glass"></i>
-                                            </button>
-                                        </span>
-                                    </form>
-                                </div>
+                        
 <?php 
 $query_productByCategory = "SELECT *,product.id as product_id from product inner join category WHERE product.category_id = category.id AND category.id = '$id' AND product.status = 1";
 $productInfo = executeResult($query_productByCategory);
@@ -146,5 +140,4 @@ foreach($productInfo as $item) {?>
                     </div>
                 </div>
             </div>
-        </div>
     </section>

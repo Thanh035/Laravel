@@ -22,7 +22,7 @@
                 </div>
             </div>
         </div>
-    </section>
+</section>
 
 <section class="sidebar_Aproduct">
         <div class="container">

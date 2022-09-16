@@ -2,28 +2,23 @@
 $email = $password = '';
 
 if (!empty($_POST)) {
-	$password = getPOST('pwd');
-	$email    = getPOST('email');
+	if (isset($_POST['email']) && isset($_POST['password'])) {
+		 //Save user into database
+        $email = getPOST('email');
+        $password = getPwdSecurity(getPOST('password')); 
 
-	if ($password != '' && $email != '') {
-		//save user into database
-        $password = getMD5Security(getPost('pwd'));
-
-		$sql  = "select * from users where email = '$email' and password = '$password'";
-		$data = executeResult($sql);
-		if ($data != null && count($data) > 0) {
-			//Cach 1: basic
-			// setcookie('login', 'true', time()+7*24*60*60, '/');
-			//Cach 2: Nang cao
-			$token = getPwdSecurity(time().$data[0]['email']);
-			setcookie('token', $token, time()+7*24*60*60, '/');
-
-			$sql = "update users set token = '$token' where id = " .$data[0]['id'];
-			execute($sql);
-
-			//login thanh cong
-            echo"<script>alert('Đăng kí thành công')</script>";
-		}
+        $select_users = "select * from users where email = '$email' ";
+        $users = executeResult($select_users,1);
+        if($users != null ) {
+            //success
+            session_start();
+            $_SESSION['users'] = $users['id'];
+            header('Location: index.php');
+        }
+        else {
+            //failed
+            echo "<script>alert('Tài khoản không đúng.Vui lòng đăng nhập lại')</script>";
+        }
 	}
 }
 ?>

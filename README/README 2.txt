@@ -11,8 +11,8 @@
 
 
     Database:
-    //init database Aptech1Project
- CREATE DATABASE Aptech1Project
+    //init database skateshop
+ CREATE DATABASE skateshop
 
     
 //CREATE table and add data
@@ -33,7 +33,7 @@ CREATE TABLE users (
     fullname varchar(50),
     email varchar(100),
     password varchar(30),
-  	CREATEd_at datetime
+  	created_at datetime
 );
 
 CREATE TABLE contact (
@@ -69,6 +69,11 @@ CREATE Table infosite(
     zalo varchar(200),
     logo varchar(100)
 );
+
+CREATE TABLE gallery( 
+	id int PRIMARY KEY AUTO_INCREMENT,
+    thumbnail varchar(300)
+)
 --------------------------
 
 INSERT INTO product(product_name,price,amount,thumbnail,description,status,category_id)
@@ -113,15 +118,18 @@ VALUES('221 Đề Thám, Phường Phạm Ngũ Lão, Quận 1, TP. HCM','0364501
 
 INSERT INTO `category` (`name`) VALUES ('Skateboard'), ('Clothing'),('Accessories'),('Hardware');
 
+INSERT INTO gallery(thumbnail)
+VALUES
+('slider1.jpg'),
+('slider2.jpg'),
+('slider3.jpg');
 
 //Save data user on device
 CREATE TABLE cart (
-	id int PRIMARY KEY AUTO_INCREMENT,
-    product_name varchar(100),
-    amount int,
-    thumbnail varchar(100),
-    price varchar(50),
-    user_id int REFERENCES users(id)
+    id int NOT NULL,
+    product_id int REFERENCES product(id),
+    user_id int REFERENCES users(id),
+    quantity int
 )
 
 //Admin page

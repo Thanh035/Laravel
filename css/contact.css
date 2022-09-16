@@ -71,13 +71,14 @@
     border: solid #ccc 1px;
 }
 
-.title-head {
+
+/* .title-head {
     font-size: 585714em;
     font-weight: 700;
     color: #363636;
     text-decoration: none;
     margin-top: 0;
-}
+} */
 
 .form-group {
     margin-bottom: 15px;

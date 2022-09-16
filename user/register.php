@@ -17,7 +17,7 @@ if(!empty($_POST)) {
         $insert_user= "INSERT INTO users (fullname,email,password,created_at)
         VALUES ('$fullname','$email','$password','$created_at')";
         execute($insert_user);  
-        echo"<script>alert('Đăng kí thành công')</script>";
+        header('Location:index.php?page=login');
     }
 }
 ?>

@@ -24,10 +24,10 @@
             } 
             
                     $isFind = false;
-                    foreach($cart as $item) {
-                        if($item['id'] == $id) {
-                            $item['amount'] = $item['amount']+$amount;
-                            $item['total_price'] = $item['amount']*$item['price'];
+                    for($i=0;$i<count($cart);$i++) {
+                        if($cart[$i]['id'] == $id) {
+                            $cart[$i]['amount'] = $cart[$i]['amount']+$amount;
+                            $cart[$i]['total_price'] = $cart[$i]['amount']*$cart[$i]['price'];
                             $isFind = true;
                             break;
                         }
@@ -45,6 +45,7 @@
                     }
                     //Update cookie
                     setcookie('cart', json_encode($cart),time() + 30*24*60*60,'/');
+                    
         }
 ?>
     <title><?php echo $productDetail['product_name']?></title>

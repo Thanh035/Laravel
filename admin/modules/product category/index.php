@@ -45,7 +45,7 @@
         <td>".$item['name']."</td>
         <td>
         <a href='?action=productCategory&query=edit&id=".$item["id"]."'>
-            <button class='btn btn-danger'>Sửa</button>
+            <button class='btn btn-warning'>Sửa</button>
           </a>
         </td>
         <td>

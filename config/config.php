@@ -2,7 +2,7 @@
 define('HOST', 'localhost');
 define('USERNAME', 'root');
 define('PASSWORD', '');
-define('DATABASE', 'aptech1_project');
+define('DATABASE', 'skateshop');
 
 $mysqli = new mysqli(HOST,USERNAME,PASSWORD,DATABASE);
 

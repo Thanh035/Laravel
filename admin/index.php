@@ -43,7 +43,7 @@
 
     <nav class="navbar col-lg-12 col-12 p-0 fixed-top d-flex flex-row">
       <div class="text-center navbar-brand-wrapper d-flex align-items-center justify-content-center">
-        <a class="navbar-brand brand-logo mr-5" href=".."><img src="images/logo.png" class="mr-2" alt="logo"/></a>
+        <a class="navbar-brand brand-logo mr-5" href=".." target="_blank"><img src="images/logo.png" class="mr-2" alt="logo"/></a>
       </div>
       <div class="navbar-menu-wrapper d-flex align-items-center justify-content-end"> 
         <ul class="navbar-nav navbar-nav-right">
@@ -95,15 +95,10 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=order">
-              <span class="menu-title">Quản lý don hang</span>
+            <a class="nav-link" href="index.php?action=gallery">
+              <span class="menu-title">Quản lý ảnh bìa</span>
             </a>
           </li>
-          <!-- <li class="nav-item">
-            <a class="nav-link" href="index.php?action=news">
-              <span class="menu-title">Quản lý bài viết</span>
-            </a>
-          </li>-->
           <li class="nav-item">
             <a class="nav-link" href="index.php?action=users">
               <span class="menu-title">Quản lý người dùng</span>

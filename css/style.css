@@ -202,46 +202,6 @@ select,
     padding-right: 0;
 }
 
-
-/* THÔNG TIN */
-
-.header-block-item .info strong,
-.header-block-item a {
-    color: #555555;
-}
-
-.header-block-item .info p,
-.header-block-item .cart-label .cart-info {
-    margin: 0;
-    font-size: 12px;
-    color: #737373;
-    line-height: 10px;
-    letter-spacing: 0.3px;
-}
-
-.header-block-item {
-    margin: 0 0 0 25px;
-}
-
-.header-block-item .info a {
-    color: #737373;
-}
-
-.icon i {
-    font-size: 25px;
-    margin: 7px 10px 0;
-}
-
-.header-block-item,
-.header-block-item a {
-    display: flex;
-}
-
-.header-block-item .fix-width-text p {
-    display: flex;
-    width: 112px;
-}
-
 .mini-cart .cart-label i {
     font-size: 12px;
     width: 35px;

@@ -75,7 +75,7 @@
                     <div class="row">
                         <div class="col-6" style="text-align: right;">
                             <div class="back-to-header show end">Lên đầu trang
-                                <i class="fa-solid fa-circle-arrow-up"></i>
+                                <a href="#top-main" class="fa-solid fa-circle-arrow-up"></a>
                             </div>
                         </div>
                     </div>

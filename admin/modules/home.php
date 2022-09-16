@@ -26,6 +26,12 @@
     else if($action=='productDetails' && $query=='edit') {
         include("modules/product details/edit.php");
     }
+    else if($action=='gallery' && $query=='') {
+        include("modules/gallery/index.php");
+    }
+    else if($action=='gallery' && $query=='edit') {
+        include("modules/gallery/edit.php");
+    }
     else if($action=='order' && $query=='') {
         include("modules/order/index.php");
     }

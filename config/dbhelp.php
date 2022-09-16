@@ -1,6 +1,20 @@
 <?php
 require_once('config.php');
 
+// init database 
+function createDatabase() {
+	// B1. Cach ket noi CSDL
+	$conn = mysqli_connect(HOST, USERNAME, PASSWORD, DATABASE);
+	mysqli_set_charset($conn, 'utf8');
+
+	$sql = 'CREATE DATABASE  if not exists';
+	execute($sql);
+	mysqli_query($conn, $sql);
+
+	// B3. Ngat ket noi toi CSDL
+	mysqli_close($conn);
+}
+
 /**
  * Insert, Update, Delete
  */

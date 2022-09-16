@@ -64,9 +64,9 @@
                             <a href="callto:<?php echo $infoList['phone_number']?>"><?php echo $infoList['phone_number']?></a>
                         </div>
                     </div>
-                    <div class="col-md-3 items">
+                    <div class="col-md-3 items" >
                         <div class="icon f-left">
-                            <i class="fa fa fa-envelope-o"></i>
+                            <i class="fa fa fa-envelope-o" style="margin: 0px;"></i>
                         </div>
                         <div class="info">
                             <a href="mailto:"><?php echo $infoList['email']?></a>

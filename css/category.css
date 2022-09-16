@@ -1,6 +1,4 @@
-/* ALL PRODUCT */
-
-.sidebar_Aproduct .title-sidebar,
+.all_Product .sidebar_Aproduct .title-sidebar,
 .title_Product p {
     text-transform: uppercase;
     font-weight: 500;
@@ -105,4 +103,3 @@
 .in-sort-by:hover ul {
     display: block;
 }
-

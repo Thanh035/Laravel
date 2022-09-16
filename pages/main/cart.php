@@ -37,7 +37,17 @@
          $json = $_COOKIE['cart'];
          $cart = json_decode($json, true);
         $totals_price = 0;
-        var_dump($cart);
+
+        if(isset($_POST['delete_to_cart'])) {
+            $product_id=$_POST['delete_to_cart'];
+            for($i=0;$i<count($cart);$i++) {
+                if($cart[$i]['id'] == $product_id) {
+                    array_splice($cart,$i,1);
+                    break;
+                }
+            }
+            setcookie('cart', json_encode($cart),time() + 30*24*60*60,'/');
+        }
     ?>
                  <div class="box-heading container" style="margin-bottom: 30px;">
                     <h1 style="font-size: 25px;" class="title-header">
@@ -46,7 +56,7 @@
                 </div>
                 
 <section class="col-main cart_desktop_page cart-page text-center">
-            <div class="row title-head col-12">
+                <div class="row title-head col-12">
                                 <div class="col-5 text-center">
                                     <h6>
                                         <span>
@@ -78,7 +88,7 @@
                                 <div class="col-1"></div>
                             </div>
 
-            </div>
+                </div>
 
             <div class="main container hidden-xs">
                         <form  method="post" class="main container hidden-xs">
@@ -98,10 +108,18 @@
                                 <div class="col-3">
                                     <div class="name-detail-cart">
                                         <h6 style="font-weight:100;">
-                                            <span>
-                                                '.$cart_item["product_name"] .'
-                                            </span>
+                                            <a href="index.php?page=details&id='. $cart_item["id"].'">
+                                                <span class="text-black">'.$cart_item["product_name"] .'</span>
+                                            </a>
                                         </h6>
+                                    </div>
+                                    <div class="deleteProduct">
+                                        <button style="border: none;float:left;" name="delete_to_cart" value="'.$cart_item["id"] .'">
+                                            <i class="fa-solid fa-xmark"></i>
+                                            <span>
+                                                Xóa
+                                            </span>
+                                        </button>
                                     </div>
                                 </div>
                                 <div class="col-2">
@@ -120,9 +138,7 @@
                                 </div>
                                 <div class="col-2">
                                     <div class="custom custom-btn-number number f-left">																			
-                                        <span class="qtyminus minus" data-field="quantity"><i class="fa-solid fa-minus"></i></span>
-                                        <input type="text" class="qty" data-field="quantity" title="Só lượng" value="'. $cart_item['amount'] .'" maxlength="12" id="qty" name="quantity">									
-                                        <span class="qtyplus plus" data-field="quantity"><i class="fa-solid fa-plus"></i></i></span>	
+                                        <input type="text" class="qty" data-field="quantity" title="Só lượng" value="'. $cart_item['amount'] .'" maxlength="12" id="qty" name="quantity" disabled>									
                                     </div>
                                 </div>
                                 <div class="col-2">
@@ -137,16 +153,6 @@
                                                 </span>
                                             </u>
                                         </b>
-                                    </div>
-                                </div>
-                                <div class="col-1">
-                                    <div class="deleteProduct">
-                                        <a style="border: none">
-                                            <i class="fa-solid fa-xmark"></i>
-                                            <span>
-                                                Xóa
-                                            </span>
-                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -213,6 +219,4 @@
 
 </section>';
 } ?>
-<script>
 
-</script>
