@@ -27,7 +27,6 @@
                     for($i=0;$i<count($cart);$i++) {
                         if($cart[$i]['id'] == $id) {
                             $cart[$i]['amount'] = $cart[$i]['amount']+$amount;
-                            $cart[$i]['total_price'] = $cart[$i]['amount']*$cart[$i]['price'];
                             $isFind = true;
                             break;
                         }
@@ -39,8 +38,7 @@
                             'product_name'=>$product_name,
                             'price'=>$price ,
                             'amount'=>$amount ,
-                            'thumbnail'=>$thumbnail,
-                            'total_price'=>$price*$amount 
+                            'thumbnail'=>$thumbnail
                         ];
                     }
                     //Update cookie

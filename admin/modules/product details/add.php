@@ -17,6 +17,6 @@
       values ('$product_name','$price','$amount','$thumbnail','$description','$status','$category_id')";
       move_uploaded_file($thumbnail_tmp,'../../..//img/product/'.$thumbnail);
       execute($sql_add);
-      header('Location:../../index.php?action=productDetails');
+      header('Location:../../index.php?m=productDetails');
     }
 ?>

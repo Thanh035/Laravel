@@ -45,7 +45,7 @@
                     <img src=' ../img/banner/<?php echo $item["thumbnail"]?>' alt='<?php echo $item["thumbnail"]?>'>
                   </td>
                   <td>
-                  <a href='?action=gallery&query=edit&id=<?php echo $item["id"]?>]'>
+                  <a href='?m=gallery&action=edit&id=<?php echo $item["id"]?>]'>
                       <button class='btn btn-warning'>Sửa</button>
                     </a>
                   </td>

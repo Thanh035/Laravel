@@ -28,6 +28,9 @@
     else if($temp=='login') {
         include("user/login.php");
     }
+    else if($temp=='complete') {
+        include("main/complete.php");
+    }
     else if($temp=='checkout') {
         include("main/checkout.php");
     }

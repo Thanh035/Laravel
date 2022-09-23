@@ -107,5 +107,5 @@
         </tr>
     </table>
   </form>
-  <a href="index.php?action=productDetails">Quay lại</a>
+  <a href="index.php?m=productDetails">Quay lại</a>
 </div>

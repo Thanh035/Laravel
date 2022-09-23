@@ -20,6 +20,6 @@
         facebook='$facebook',instagram='$instagram',youtube='$youtube',zalo='$zalo',logo='$logo'";
         move_uploaded_file($logo_tmp,'../../../img/logo/'.$logo);
         execute($sql_update);
-        header('Location:../../index.php?action=infoSite');       
+        header('Location:../../index.php?m=infoSite');       
   }
 ?>

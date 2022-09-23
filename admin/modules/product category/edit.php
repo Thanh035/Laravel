@@ -31,5 +31,5 @@
         </tr>
     </table>
   </form>
-  <a href="index.php?action=productCategory">Quay lại</a>
+  <a href="index.php?m=productCategory">Quay lại</a>
 </div>

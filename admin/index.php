@@ -80,32 +80,32 @@
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=infoSite">
+            <a class="nav-link" href="index.php?m=infoSite">
               <span class="menu-title">Quản lý thông tin</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=productCategory">
+            <a class="nav-link" href="index.php?m=productCategory">
               <span class="menu-title">Quản lý danh mục sản phẩm</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=productDetails">
+            <a class="nav-link" href="index.php?m=productDetails">
               <span class="menu-title">Quản lý sản phẩm</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=gallery">
+            <a class="nav-link" href="index.php?m=gallery">
               <span class="menu-title">Quản lý ảnh bìa</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=users">
+            <a class="nav-link" href="index.php?m=users">
               <span class="menu-title">Quản lý người dùng</span>
             </a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="index.php?action=contact">
+            <a class="nav-link" href="index.php?m=contact">
               <span class="menu-title">Quản lý phản hồi</span>
             </a>
           </li>

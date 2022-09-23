@@ -124,29 +124,23 @@ VALUES
 ('slider2.jpg'),
 ('slider3.jpg');
 
-//Save data user on device
-CREATE TABLE cart (
-    id int NOT NULL,
-    product_id int REFERENCES product(id),
-    user_id int REFERENCES users(id),
-    quantity int
-)
+--------------
+create table orders (
+ id int primary key auto_increment,
+ fullname varchar(100),
+ phone_number varchar(20),
+ email varchar(150),
+ address varchar(200),
+ note text,
+ order_date datetime,
+ cart_code int
+);
 
-//Admin page
-CREATE TABLE orders(
-    id int PRIMARY KEY AUTO_INCREMENT,
-    fullname varchar(100),
-    email varchar(200),
-    phone_number varchar(12),
-    address varchar(200),
-    note text,
-    user_id int REFERENCES users(id),
-    orderDetail_id int REFERENCES order_details(id)
+create table order_details (
+ id int primary key auto_increment,
+ order_id int references orders (id),
+ product_id int references products (id),
+ num int,
+ price float,
+ cart_code
 )
-
-CREATE TABLE order_details(
-    id int PRIMARY KEY AUTO_INCREMENT,
-    order_id int REFERENCES orders(id),
-    cart_id int REFERENCES cart(id)
-)
- 

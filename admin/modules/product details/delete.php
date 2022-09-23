@@ -6,5 +6,5 @@ $productList = executeResult($select_product,1);
 unlink('uploads/'.$productList['thumbnail']);
 $delete_product = "delete from product where id = '$id'";
 execute($delete_product);
-header('Location:../../index.php?action=productDetails');
+header('Location:../../index.php?m=productDetails');
 ?>

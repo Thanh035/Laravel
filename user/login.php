@@ -7,7 +7,7 @@ if (!empty($_POST)) {
         $email = getPOST('email');
         $password = getPwdSecurity(getPOST('password')); 
 
-        $select_users = "select * from users where email = '$email' ";
+        $select_users = "select * from users where email = '$email' AND password = '$password' ";
         $users = executeResult($select_users,1);
         if($users != null ) {
             //success

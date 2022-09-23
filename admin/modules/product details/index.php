@@ -6,7 +6,7 @@
 <h2>Quản lý sản phẩm</h2>
 
 <div class="container mt-3">
-  <form method="post"  action="modules/product details/add.php" enctype="multipart/form-data">
+  <form method="post"  m="modules/product details/add.php" enctype="multipart/form-data">
     <table class="table table-bordered" ">
             <h3>Thêm sản phẩm</h3>
         <tr>
@@ -117,7 +117,7 @@
                     <?php echo $item['category_name']?>
                   </td>
                   <td>
-                  <a href='?action=productDetails&query=edit&id=<?php echo $item["id"]?>]'>
+                  <a href='?m=productDetails&action=edit&id=<?php echo $item["id"]?>]'>
                       <button class='btn btn-warning'>Sửa</button>
                     </a>
                   </td>

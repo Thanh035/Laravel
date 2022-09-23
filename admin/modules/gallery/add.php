@@ -11,6 +11,6 @@
       $sql_add = "insert into gallery (thumbnail) values ('$thumbnail')";
       move_uploaded_file($thumbnail_tmp,'../../../img/banner/'.$thumbnail);
       execute($sql_add);
-      header('Location:../../index.php?action=gallery');
+      header('Location:../../index.php?m=gallery');
     }
 ?>

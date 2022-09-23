@@ -44,7 +44,7 @@
         <td>".++$index."</td>
         <td>".$item['name']."</td>
         <td>
-        <a href='?action=productCategory&query=edit&id=".$item["id"]."'>
+        <a href='?m=productCategory&action=edit&id=".$item["id"]."'>
             <button class='btn btn-warning'>Sửa</button>
           </a>
         </td>

@@ -184,7 +184,7 @@
                                                         </a>
                                                     </li>
                                                     <li>
-                                                        <a href="index.php?page=checkout" class="btn btn-primary " title="Tiến hành đặt hàng" type="a" >
+                                                        <a href="pages/main/checkout.php" class="btn btn-primary " title="Tiến hành đặt hàng" type="a" >
                                                             <span >Tiến hành đặt hàng</span>
                                                         </a>
                                                     </li>
